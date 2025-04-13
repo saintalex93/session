@@ -1,0 +1,24 @@
+<div class="row min-vh-100 justify-content-center align-items-center">
+    <div class="col-lg-12">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 p-5 card justify-content-center" style="background-color: #faf8f8">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="form-group" >
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" id="password" formControlName="password">
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">Acessar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5 ">
+                <img class="img-fluid" src="https://www.santocodigo.com.br/assets/images/SantoCodigo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
