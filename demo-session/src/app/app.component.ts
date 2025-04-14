@@ -1,15 +1,17 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
+import {CommonModule} from "@angular/common";
 import {LoadingComponent} from "./components/loader/loader.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoadingComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  imports: [CommonModule, RouterOutlet, LoadingComponent],
+  template: `
+    <app-loading/>
+    <router-outlet></router-outlet>
+  `
 })
 export class AppComponent {
-  title = 'demo-session';
-
+  title = 'Demo Session';
 }
