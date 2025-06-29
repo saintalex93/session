@@ -3,15 +3,15 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {LoginService} from "./login.service";
 import {AuthenticationService} from "./authentication.service";
 import Swal from 'sweetalert2'
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {Router} from "@angular/router";
 
 @Component({
     imports: [
-        CommonModule, ReactiveFormsModule
+        CommonModule, ReactiveFormsModule, NgOptimizedImage
     ],
     templateUrl: './login.component.html',
-    styleUrl: './login.component.less'
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent {
   loginForm = new FormGroup({

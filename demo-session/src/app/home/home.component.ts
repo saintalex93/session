@@ -7,7 +7,7 @@ import {LoadingComponent} from "../components/loader/loader.component";
         LoadingComponent
     ],
     templateUrl: './home.component.html',
-    styleUrl: './home.component.less'
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

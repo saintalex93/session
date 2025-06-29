@@ -1,14 +1,15 @@
-import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {CommonModule} from "@angular/common";
-import {LoadingComponent} from "./components/loader/loader.component";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from "@angular/common";
+import { LoadingComponent } from "./components/loader/loader.component";
+import { HeaderComponent } from "./components/loader/header/header.component";
 
 @Component({
-    selector: 'app-root',
-    imports: [CommonModule, RouterOutlet, LoadingComponent],
-    template: `
+  selector: 'app-root',
+  imports: [CommonModule, RouterOutlet, LoadingComponent, HeaderComponent],
+  template: `
     <app-loading/>
-    <div class="container-fluid"><router-outlet></router-outlet></div>
+    <app-header></app-header><div class="container-fluid"><router-outlet></router-outlet></div>
   `
 })
 export class AppComponent {
