@@ -6,4 +6,6 @@ Cypress
 
 
 Interceptor backEnd
-Redirecionar rota frontEnd
+Redirecionar rota frontEnd - Ok
+Criar token validate de x tempo
+

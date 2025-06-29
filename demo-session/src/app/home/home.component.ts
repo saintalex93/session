@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import {LoadingComponent} from "../components/loader/loader.component";
 
 @Component({
-    selector: 'app-home',
-    imports: [
-        LoadingComponent
-    ],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.scss'
+  selector: 'app-home',
+  imports: [],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

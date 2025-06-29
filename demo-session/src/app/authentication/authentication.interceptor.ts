@@ -1,6 +1,6 @@
 import { HttpHandlerFn, HttpRequest } from "@angular/common/http";
-import {inject} from "@angular/core";
-import {AuthenticationService} from "./login/authentication.service";
+import { inject } from "@angular/core";
+import { AuthenticationService } from "./authentication.service";
 
 const EXCLUDED_ROUTES = [
   '/login'
