@@ -1,15 +1,19 @@
-import {ApplicationConfig} from '@angular/core';
-import {provideRouter} from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
+import { provideRouter } from '@angular/router';
 
-import {routes} from './app.routes';
+import { routes } from './app.routes';
 import { provideHttpClient, withInterceptors } from "@angular/common/http";
-import {authenticationInterceptor} from "./authentication.interceptor";
-import {loadingInterceptor} from "./components/loader/loading.interceptor";
+import { authenticationInterceptor } from "./authentication.interceptor";
+import { loadingInterceptor } from "./components/loader/loading.interceptor";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideHttpClient(
-      withInterceptors([authenticationInterceptor, loadingInterceptor])
-    )]
+    provideHttpClient(withInterceptors([authenticationInterceptor, loadingInterceptor])),
+    provideAnimationsAsync(),
+    provideAnimations()
+  ]
 };
