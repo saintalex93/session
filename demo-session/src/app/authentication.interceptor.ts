@@ -1,4 +1,4 @@
-import {HttpHandlerFn, HttpRequest} from "@angular/common/http";
+import { HttpHandlerFn, HttpRequest } from "@angular/common/http";
 import {inject} from "@angular/core";
 import {AuthenticationService} from "./login/authentication.service";
 
