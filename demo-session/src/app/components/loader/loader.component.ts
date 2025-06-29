@@ -4,10 +4,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingService } from "./loading.service";
 
 @Component({
-  selector: 'app-loading',
-  standalone: true,
-  imports: [CommonModule, MatProgressSpinnerModule],
-  template: `
+    selector: 'app-loading',
+    imports: [CommonModule, MatProgressSpinnerModule],
+    template: `
     <div class="loading-overlay" *ngIf="(loadingService.loading$ | async)">
       <mat-progress-spinner
         diameter="50"
@@ -17,7 +16,7 @@ import { LoadingService } from "./loading.service";
       </mat-progress-spinner>
     </div>
   `,
-  styles: [`
+    styles: [`
     .loading-overlay {
       position: fixed;
       top: 0;

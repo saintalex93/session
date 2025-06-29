@@ -7,12 +7,11 @@ import {CommonModule} from "@angular/common";
 import {Router} from "@angular/router";
 
 @Component({
-  standalone: true,
-  imports: [
-    CommonModule, ReactiveFormsModule
-  ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.less'
+    imports: [
+        CommonModule, ReactiveFormsModule
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.less'
 })
 export class LoginComponent {
   loginForm = new FormGroup({

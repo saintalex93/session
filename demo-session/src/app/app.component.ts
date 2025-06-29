@@ -4,10 +4,9 @@ import {CommonModule} from "@angular/common";
 import {LoadingComponent} from "./components/loader/loader.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, LoadingComponent],
-  template: `
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, LoadingComponent],
+    template: `
     <app-loading/>
     <div class="container-fluid"><router-outlet></router-outlet></div>
   `
