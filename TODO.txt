@@ -1,0 +1,9 @@
+Testes Integrados
+Testes Unitários
+Testes FrontEnd Karma
+Cypress
+
+
+
+Interceptor backEnd
+Redirecionar rota frontEnd

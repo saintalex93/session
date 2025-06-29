@@ -9,7 +9,7 @@ import {LoadingComponent} from "./components/loader/loader.component";
   imports: [CommonModule, RouterOutlet, LoadingComponent],
   template: `
     <app-loading/>
-    <router-outlet></router-outlet>
+    <div class="container-fluid"><router-outlet></router-outlet></div>
   `
 })
 export class AppComponent {
