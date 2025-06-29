@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.santocodigo.session.login.rest.RestLogin;
 import br.com.santocodigo.session.login.service.LoginService;
 
-// @CrossOrigin( "http://localhost:4200" )
 @RestController
 @RequestMapping( path = "login" )
 public class LoginController

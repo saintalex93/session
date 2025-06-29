@@ -25,8 +25,7 @@ export class LoginComponent {
     })
   });
 
-  constructor(private loginService: LoginService, private authenticationService: AuthenticationService, private router: Router) {
-  }
+  constructor(private loginService: LoginService, private authenticationService: AuthenticationService, private router: Router) { }
 
   login() {
 
